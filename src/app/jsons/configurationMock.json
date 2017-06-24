@@ -1,0 +1,28 @@
+{
+	"header": {
+		"id" : "MainHeader",
+		"name" : "header",
+		"title" : "header",
+		"class" : "main-header",
+		"template" : "header.html",
+        "width" : "100%",
+        "height" : "120px"
+	},
+	"content-body": {
+			"id" : "content-body",
+			"name" : "content-body-name",
+			"type" : "content-body-panel",
+			"title" : "content-body",
+			"class" : "main-header",
+			"template" : "content-body.html"
+    },
+    "footer": {
+        "id" : "MainFooter",
+		"name" : "footer",
+		"title" : "footer",
+		"class" : "main-footer",
+		"template" : "footer.html",
+        "width" : "100%",
+        "height" : "200px"
+    }
+}
