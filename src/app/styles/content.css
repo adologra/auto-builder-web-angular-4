@@ -5,17 +5,16 @@
     display: table;
 }
 
-.main-content-wrapper .left-menu-wrapper {
-    width: 15%;
+.main-content-wrapper .left-menu {
+    width : 15%;
+    height : 100%;
     display : table-cell;
     margin: 0;
-    padding: 0;
-    background-color: #eee;
-    box-sizing: border-box;
+    background-color: coral;
 }
 
 .main-content-wrapper .main-section {
-    width : 70%;
+    width : 69%;
     height : 100%;
     margin: 0;
     padding: 15px;
@@ -33,3 +32,10 @@
     
 }
 
+.main-content-wrapper .right-menu {
+    width : 15%;
+    height : 100%;
+    margin: 0;
+    display : table-cell;
+    background-color: darkorchid;
+}
