@@ -3,6 +3,8 @@ import { MarkdownService } from 'angular2-markdown';
 import { ItemMenu } from '../../../models/types/item.menu';
 import { LeftMenuComponent } from './left.menu.component';
 import { TableContentComponent } from './table.content.component';
+import { MarkdownListService } from '../../../services/content/markdownListService';
+import { MarkdownOptions } from '../../../models/content/markdownOptions';
 
 @Component({
   selector: 'section[class="main-content-wrapper"]',
@@ -15,10 +17,15 @@ import { TableContentComponent } from './table.content.component';
 export class ContentComponent  { 
     leftMenuItems: ItemMenu[];
     tableContentList: ItemMenu[];
-    constructor(private _markdown: MarkdownService) {
-        console.log("markdown created");
+    markdownDocumentList: MarkdownOptions[];
+    markdownId : String;
+    
+    constructor(private _markdown: MarkdownService,
+                private _markdownDocumentService: MarkdownListService) {
+        
         this.leftMenuItems = new Array<ItemMenu> ();
         this.tableContentList = new Array<ItemMenu> ();
+        this.markdownId = 'nodo-parent-1:2';
     }
 
 	ngOnInit () {
@@ -33,6 +40,8 @@ export class ContentComponent  {
             return '<h' + level + ' id="' + escapedText + '" class="' + className + '">' + 
                 text + '</h' + level + '>';
         };
+        
+        this._markdownDocumentService.getMarkdownList().subscribe(markdownDocList => this.markdownDocumentList = markdownDocList);
 	}
     
     private addMenuItems(escapedText: String, text: String, level: Number) {
@@ -60,5 +69,14 @@ export class ContentComponent  {
     
     public showRightMenu (): Boolean {
         return false;
+    }
+    
+    public getMarkDownDocumentPath(): String {
+        var selectedMarkdown: MarkdownOptions;
+        if (this.markdownDocumentList && this.markdownDocumentList.length > 0) {
+            selectedMarkdown = this.markdownDocumentList.filter(item => item.id === this.markdownId)[0];
+        }
+        
+        return (selectedMarkdown && selectedMarkdown.pathMdFile) || " ";
     }
 }

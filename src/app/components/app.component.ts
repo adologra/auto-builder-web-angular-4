@@ -10,7 +10,6 @@ export class AppComponent  {
 	structures: Structure[];
 
 	constructor(private structureConfigurationService: StructureConfigurationService) {
-        console.log("hola que tal");
     }
 
 	ngOnInit () {

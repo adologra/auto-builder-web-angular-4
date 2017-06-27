@@ -1,8 +1,8 @@
 <aside *ngIf="showLeftMenu()" class="left-menu-wrapper" [leftMenuItems]="leftMenuItems">
 </aside>
-<section class="main-section">
+<section class="main-section" >
     <article class="table-content-wrapper" [tableContentList]="tableContentList"></article>
-    <main Markdown path="app/md/browsersync.md"></main>
+    <main Markdown [path]="getMarkDownDocumentPath()"></main>
 </section>
 <aside *ngIf="showRightMenu()" class="right-menu">
 </aside>

@@ -10,6 +10,7 @@ import { LeftMenuComponent } from './components/panels/content/left.menu.compone
 import { TableContentComponent } from './components/panels/content/table.content.component';
 import { FooterComponent }  from './components/panels/footer/footer.component';
 import { StructureConfigurationService } from './services/configuration/structureConfigurationService';
+import { MarkdownListService } from './services/content/markdownListService';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { StructureConfigurationService } from './services/configuration/structur
                     FooterComponent
                     
   				],
-  providers: [ StructureConfigurationService, MarkdownService  ],
+  providers: [ StructureConfigurationService, MarkdownService, MarkdownListService  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
