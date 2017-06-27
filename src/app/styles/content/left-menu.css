@@ -3,7 +3,7 @@
     padding: 20px;
     text-align: center;
     position: relative;
-    top:-40px;
+    top:-15px;
     background-color: coral;
 }
 
@@ -17,7 +17,7 @@
 .left-menu-wrapper .left-menu-nav {
     margin: 0;
     position: relative;
-    top: -40px
+    top: -7px
 }
 
 .left-menu-wrapper .left-menu-nav .left-menu-ul{

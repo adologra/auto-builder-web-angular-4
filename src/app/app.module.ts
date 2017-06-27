@@ -7,6 +7,7 @@ import { AppComponent }  from './components/app.component';
 import { HeaderComponent }  from './components/panels/header/header.component';
 import { ContentComponent }  from './components/panels/content/content.component';
 import { LeftMenuComponent } from './components/panels/content/left.menu.component';
+import { TableContentComponent } from './components/panels/content/table.content.component';
 import { FooterComponent }  from './components/panels/footer/footer.component';
 import { StructureConfigurationService } from './services/configuration/structureConfigurationService';
 
@@ -23,6 +24,7 @@ import { StructureConfigurationService } from './services/configuration/structur
                     MarkdownComponent,
                     ContentComponent,
                     LeftMenuComponent,
+                    TableContentComponent,
                     FooterComponent
                     
   				],

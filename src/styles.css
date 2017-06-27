@@ -2,4 +2,4 @@
 @import 'app/styles/body.css';
 @import 'app/styles/header.css';
 @import 'app/styles/footer.css';
-@import 'app/styles/content/content-index.css';
+@import './app/styles/content/content-index.css';

@@ -2,19 +2,23 @@ import { Component } from '@angular/core';
 import { MarkdownService } from 'angular2-markdown';
 import { ItemMenu } from '../../../models/types/item.menu';
 import { LeftMenuComponent } from './left.menu.component';
+import { TableContentComponent } from './table.content.component';
 
 @Component({
   selector: 'section[class="main-content-wrapper"]',
   entryComponents: [ 
-                LeftMenuComponent
+                LeftMenuComponent,
+                TableContentComponent
             ],
   templateUrl: 'app/views/components/panels/content/contentTemplate.html'
 })
 export class ContentComponent  { 
     leftMenuItems: ItemMenu[];
+    tableContentList: ItemMenu[];
     constructor(private _markdown: MarkdownService) {
         console.log("markdown created");
         this.leftMenuItems = new Array<ItemMenu> ();
+        this.tableContentList = new Array<ItemMenu> ();
     }
 
 	ngOnInit () {
@@ -38,7 +42,18 @@ export class ContentComponent  {
         title.setId('#'+escapedText);
         title.setLevel(level);
         title.setText(text);
-        this.leftMenuItems.push(title);
+        
+        if(this.leftMenuItems.filter(item => item.getId().substr(1) === escapedText).length == 0){
+            this.leftMenuItems.push(title);
+        }
+        
+        if (this.tableContentList.filter(item => item.getId().substr(1) === escapedText).length == 0) {
+            this.tableContentList.push(title);
+        }
+    }
+    
+    public showTableContentList(): Boolean {
+        return this.tableContentList && this.tableContentList.length > 0;
     }
     
     public showLeftMenu (): Boolean {
