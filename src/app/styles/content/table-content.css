@@ -1,8 +1,6 @@
 .table-content-wrapper .table-content-title-wrapper {
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
-    background-color: coral;
 }
 
 .table-content-wrapper .table-content-title-wrapper .table-content-title {
@@ -19,7 +17,10 @@
 .table-content-wrapper .table-content-ul{
     margin: 5px;
     list-style-type: none;
-    padding: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 30px;
 }
 
 .table-content-wrapper .table-content-ul .table-content-li{ 

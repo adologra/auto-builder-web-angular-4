@@ -23,6 +23,7 @@ export class ContentComponent  {
 
 	ngOnInit () {
         var that = this;
+        var contentTable:String = '';
         this._markdown.renderer.heading = function (text: String, level: Number) {
             var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
             var className = '';
