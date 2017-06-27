@@ -2,7 +2,9 @@
   "server": {
     "baseDir": "src",
     "routes": {
-      "/node_modules": "node_modules"
+      "/node_modules": "node_modules",
+      "/src/dist/app": "app",
+      "/src/dist": "dist"
     }
   }
 }

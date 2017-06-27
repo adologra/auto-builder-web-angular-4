@@ -1,0 +1,104 @@
+.left-menu-wrapper .left-menu-title-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top:-15px;
+    background-color: coral;
+}
+
+.left-menu-wrapper .left-menu-title-wrapper .left-menu-title {
+    font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 170%;
+    font-weight: 600;
+    text-shadow: 0px 6px 6px rgba(170, 170, 170, 0.87);
+}
+
+.left-menu-wrapper .left-menu-nav {
+    margin: 0;
+    position: relative;
+    top: -7px
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul{
+    margin: 5px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li{ 
+    color: black; 
+    display: block; 
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li + .left-menu-li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li:first-child{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li:last-child{
+    padding-top: 3px;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li:hover {
+    background-color: #ccc; 
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li.active {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li .left-menu-li-link {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: black;
+    text-decoration: none; 
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li.left-menu-li-level-1 {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li.left-menu-li-level-2 {
+    font-size: 120%;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li.left-menu-li-level-3 {
+    font-size: 100%;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li.left-menu-li-level-4 {
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 35px;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li.left-menu-li-level-5 {
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.left-menu-wrapper .left-menu-nav .left-menu-ul .left-menu-li.left-menu-li-level-6 {
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+

@@ -1,0 +1,101 @@
+.table-content-wrapper .table-content-title-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.table-content-wrapper .table-content-title-wrapper .table-content-title {
+    font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 170%;
+    font-weight: 600;
+    text-shadow: 0px 6px 6px rgba(170, 170, 170, 0.87);
+}
+
+.table-content-wrapper {
+    margin: 0;
+}
+
+.table-content-wrapper .table-content-ul{
+    margin: 5px;
+    list-style-type: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li{ 
+    color: black; 
+    display: block; 
+}
+
+.table-content-wrapper .table-content-ul .table-content-li + .table-content-li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li:first-child{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px
+}
+
+.table-content-wrapper .table-content-ul .table-content-li:last-child{
+    padding-top: 3px;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li:hover {
+    background-color: #ccc; 
+}
+
+.table-content-wrapper .table-content-ul .table-content-li.active {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li .table-content-li-link {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: black;
+    text-decoration: none; 
+}
+
+.table-content-wrapper .table-content-ul .table-content-li.table-content-li-level-1 {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li.table-content-li-level-2 {
+    font-size: 120%;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li.table-content-li-level-3 {
+    font-size: 100%;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li.table-content-li-level-4 {
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 35px;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li.table-content-li-level-5 {
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.table-content-wrapper .table-content-ul .table-content-li.table-content-li-level-6 {
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+
