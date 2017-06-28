@@ -1,0 +1,16 @@
+[
+    {
+        "id" : "item-menu-1",
+        "name" : "browsersync-tutorials",
+        "type" : "item-menu",
+        "class" : "left-menu-li",
+        "title" : "Browsersync"
+    },
+    {
+        "id" : "item-menu-2",
+        "name" : "TamperMonkey-tutorials",
+        "type" : "item-menu",
+        "class" : "left-menu-li",
+        "title" : "Tampermonkey"
+    }
+]

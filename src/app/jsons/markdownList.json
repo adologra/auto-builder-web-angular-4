@@ -1,14 +1,14 @@
 [
     {
-        "id":"nodo-parent-1:1",
+        "id":"item-menu-1:1",
         "header": "Title of the document",
         "pathMdFile": "dist/app/md/browsersync.md",
-        "nodoParentId": "nodo-parent-1"
+        "nodeParentId": "item-menu-1"
     },
     {
-        "id":"nodo-parent-1:2",
+        "id":"item-menu-2:2",
         "header": "Sample of Sintax of markdown code.",
         "pathMdFile": "dist/app/md/sintaxmarkdown.md",
-        "nodoParentId": "nodo-parent-1"
+        "nodeParentId": "item-menu-2"
     }
 ]

@@ -1,4 +1,8 @@
-<aside *ngIf="showLeftMenu()" class="left-menu-wrapper" [leftMenuItems]="leftMenuItems">
+<aside *ngIf="showLeftMenu()" class="left-menu-wrapper"
+       [leftMenuItems]="leftMenuItems"
+       [leftStructure]="sectionConfiguration.leftSideMenu"
+       [listSubMenuItems]="markdownDocumentList"
+       (onSelectMarkdown)="onSelectMarkdown($event)">
 </aside>
 <section class="main-section" >
     <article class="table-content-wrapper" [tableContentList]="tableContentList"></article>

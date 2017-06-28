@@ -1,9 +1,11 @@
 
 export class Structure {
-	id: String;
-	name: String;
-	type: String;
-	title: String;
-	class: String;
-	template: String;
+    id: string;
+    name: string;
+    type: string;
+    title: string;
+    class: string;
+    template: string;
+    itemFile: string;
+    contentFile: string;
 }

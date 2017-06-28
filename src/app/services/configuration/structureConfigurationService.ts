@@ -1,20 +1,36 @@
 
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import {Observable} from 'rxjs/Observable';
 import { Structure } from '../../models/configuration/structure';
+import { SectionStructure } from '../../models/configuration/sectionStructure';
+import { MainStructure } from '../../models/configuration/mainStructure';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class StructureConfigurationService {
-	constructor(private http: Http) {}
+    jsonsUrl: String;
+    constructor(private http: Http) {
+        this.jsonsUrl = 'dist/app/jsons/';
+    }
 
-	getHeaderConfiguration() {
-		return this.http.get('app/jsons/configurationMock.json')
-					.map(response => <Structure>response.json().header);
-	}
+    getHeaderConfiguration(): Observable<Structure> {
+        return this.http.get( this.jsonsUrl + 'configurationMock.json' ).map(response => <Structure>response.json().header);
+    }
 
-	getConfiguration() {
-		return this.http.get('app/jsons/configurationMock.json')
-					.map(response => <Structure[]>response.json().structure);
-	}
+    getSectionConfiguration(): Observable<SectionStructure> {
+        return this.http.get(this.jsonsUrl + 'configurationMock.json').map(response => <SectionStructure>response.json().section);
+    }
+
+    getFooterConfiguration(): Observable<Structure> {
+        return this.http.get(this.jsonsUrl + 'configurationMock.json').map(response => <Structure>response.json().footer);
+    }
+
+    getConfiguration(): Observable<MainStructure> {
+        return this.http.get(this.jsonsUrl + 'configurationMock.json').map(response => <MainStructure>response.json());
+    }
+
+    getListStructureConfiguration(nameStructure: string): Observable<Structure[]> {
+        return this.http.get( this.jsonsUrl.concat(nameStructure) ).map(response => <Structure[]>response.json());
+    }
 }

@@ -14,22 +14,26 @@ import { MarkdownListService } from './services/content/markdownListService';
 
 
 @NgModule({
-  imports:      [ 
-                    BrowserModule, 
-                    HttpModule
-                    
-                ],
-  declarations: [ 
-  					AppComponent,
-                    HeaderComponent,
-                    MarkdownComponent,
-                    ContentComponent,
-                    LeftMenuComponent,
-                    TableContentComponent,
-                    FooterComponent
-                    
-  				],
-  providers: [ StructureConfigurationService, MarkdownService, MarkdownListService  ],
-  bootstrap:    [ AppComponent ]
+    imports: [
+        BrowserModule,
+        HttpModule
+    ],
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        MarkdownComponent,
+        ContentComponent,
+        LeftMenuComponent,
+        TableContentComponent,
+        FooterComponent
+    ],
+    providers: [
+        StructureConfigurationService,
+        MarkdownService,
+        MarkdownListService
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule { }
